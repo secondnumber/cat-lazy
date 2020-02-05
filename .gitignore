@@ -1,4 +1,4 @@
 *.swp
 *-lock.*
 /node_modules
-/source
+/design
