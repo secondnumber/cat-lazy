@@ -1,4 +1,7 @@
 module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
   grunt.initConfig({
     less: {
       style: {
@@ -9,12 +12,9 @@ module.exports = function(grunt) {
     },
     watch: {
       style: {
-        files: ['source/**/*.less'],
+        files: ['source/less/**/*.less'],
         tasks: ['less'],
       },
     },
   });
-
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
 };
